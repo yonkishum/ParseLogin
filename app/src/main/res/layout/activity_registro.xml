@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.yonkishum.parselogindevahoy.Registro"
+    android:background="#ff1d81ff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Registro de Usuario"
+            android:id="@+id/textView2"
+            android:layout_marginTop="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Nombre de Usuario"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/rUser"
+            android:layout_marginTop="63dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:hint="Contraseña"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/rPass"
+            android:layout_below="@+id/rUser"
+            android:layout_alignLeft="@+id/rUser"
+            android:layout_alignStart="@+id/rUser"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Confirmar Contraseña"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/rCpass"
+            android:layout_below="@+id/rPass"
+            android:layout_alignLeft="@+id/rPass"
+            android:layout_alignStart="@+id/rPass"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:id="@+id/buttonR"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Correo Electronico"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/rEmail"
+            android:layout_below="@+id/rCpass"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
